@@ -1,0 +1,180 @@
+{
+  "repository": {
+    "name": "Claude-skills",
+    "url": "https://github.com/joaopiccioni44-creator/Claude-skills.git",
+    "description": "Repositório centralizado de skills customizadas para Claude AI",
+    "author": "João Piccioni",
+    "created": "2025-02-06",
+    "version": "1.0.0"
+  },
+  "skills": [
+    {
+      "name": "openclaw-install",
+      "category": "installation",
+      "description": "Complete installation and setup guide for OpenClaw, the personal AI assistant",
+      "triggers": [
+        "install OpenClaw",
+        "setup gateway",
+        "configure channels",
+        "WhatsApp",
+        "Telegram",
+        "Slack",
+        "Discord",
+        "Signal",
+        "iMessage"
+      ],
+      "prerequisites": [
+        "Node.js >= 22",
+        "pnpm or npm",
+        "Git"
+      ],
+      "platforms": [
+        "macOS",
+        "Linux",
+        "Docker"
+      ],
+      "tags": [
+        "automation",
+        "messaging",
+        "AI assistant",
+        "gateway",
+        "channels"
+      ],
+      "last_updated": "2025-02-06"
+    },
+    {
+      "name": "remotion",
+      "category": "video-creation",
+      "description": "Create programmatic videos using Remotion framework with React",
+      "triggers": [
+        "create video",
+        "Remotion",
+        "programmatic video",
+        "React video"
+      ],
+      "prerequisites": [
+        "Node.js",
+        "React knowledge",
+        "Remotion installed"
+      ],
+      "platforms": [
+        "macOS",
+        "Linux",
+        "Windows"
+      ],
+      "tags": [
+        "video",
+        "Remotion",
+        "React",
+        "animation",
+        "content-creation"
+      ],
+      "last_updated": "2025-02-06"
+    },
+    {
+      "name": "theme-factory",
+      "category": "design",
+      "description": "Toolkit for styling artifacts with themes. Apply pre-set themes or generate custom themes for slides, docs, reports, and HTML pages",
+      "triggers": [
+        "apply theme",
+        "style artifact",
+        "theme colors",
+        "design system"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "all"
+      ],
+      "tags": [
+        "design",
+        "themes",
+        "styling",
+        "artifacts",
+        "colors"
+      ],
+      "last_updated": "2025-02-06"
+    },
+    {
+      "name": "skill-creator",
+      "category": "development",
+      "description": "Guide for creating effective skills that extend Claude's capabilities with specialized knowledge and workflows",
+      "triggers": [
+        "create skill",
+        "new skill",
+        "skill development",
+        "extend Claude"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "all"
+      ],
+      "tags": [
+        "development",
+        "meta",
+        "skill-creation",
+        "documentation"
+      ],
+      "last_updated": "2025-02-06"
+    },
+    {
+      "name": "canvas-design",
+      "category": "design",
+      "description": "Create beautiful visual art in PNG and PDF documents using design philosophy. Generate posters, artwork, and static pieces",
+      "triggers": [
+        "create poster",
+        "design art",
+        "visual design",
+        "canvas art"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "all"
+      ],
+      "tags": [
+        "design",
+        "visual-art",
+        "posters",
+        "graphics",
+        "canvas"
+      ],
+      "last_updated": "2025-02-06"
+    },
+    {
+      "name": "yc-advisor",
+      "category": "startup-advisory",
+      "description": "Y Combinator startup advisory guidance and best practices",
+      "triggers": [
+        "startup advice",
+        "YC",
+        "Y Combinator",
+        "startup strategy"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "all"
+      ],
+      "tags": [
+        "startups",
+        "YC",
+        "advisory",
+        "strategy",
+        "entrepreneurship"
+      ],
+      "last_updated": "2025-02-06"
+    }
+  ],
+  "metadata": {
+    "total_skills": 6,
+    "categories": [
+      "installation",
+      "video-creation",
+      "design",
+      "development",
+      "startup-advisory"
+    ],
+    "sync_instructions": {
+      "push": "Use sync-skills.sh para enviar skills locais para GitHub",
+      "pull": "Use install-skills.sh para baixar e instalar skills do GitHub"
+    }
+  }
+}

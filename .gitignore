@@ -1,0 +1,50 @@
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Arquivos temporários
+tmp/
+temp/
+*.tmp
+
+# Credenciais e configurações locais
+.env
+.env.local
+*.key
+*.pem
+credentials/
+secrets/
+
+# Node modules (caso alguma skill precise)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build artifacts
+dist/
+build/
+*.o
+*.exe
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Cache
+.cache/
+__pycache__/
+*.pyc
