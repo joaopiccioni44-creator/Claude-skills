@@ -161,16 +161,44 @@
         "entrepreneurship"
       ],
       "last_updated": "2025-02-06"
+    },
+    {
+      "name": "ralph-wiggum",
+      "category": "autonomous-development",
+      "description": "Autonomous AI coding with spec-driven development using Geoffrey Huntley's iterative bash loop methodology",
+      "triggers": [
+        "ralph wiggum",
+        "autonomous coding",
+        "spec-driven development",
+        "ralph loop",
+        "iterative development"
+      ],
+      "prerequisites": [
+        "Claude Code or Codex CLI"
+      ],
+      "platforms": [
+        "macOS",
+        "Linux"
+      ],
+      "tags": [
+        "autonomous",
+        "spec-driven",
+        "iterative",
+        "bash-loop",
+        "AI-coding"
+      ],
+      "last_updated": "2025-02-15"
     }
   ],
   "metadata": {
-    "total_skills": 6,
+    "total_skills": 7,
     "categories": [
       "installation",
       "video-creation",
       "design",
       "development",
-      "startup-advisory"
+      "startup-advisory",
+      "autonomous-development"
     ],
     "sync_instructions": {
       "push": "Use sync-skills.sh para enviar skills locais para GitHub",
