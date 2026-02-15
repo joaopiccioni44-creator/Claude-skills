@@ -188,17 +188,118 @@
         "AI-coding"
       ],
       "last_updated": "2025-02-15"
+    },
+    {
+      "name": "find-skills",
+      "category": "utility",
+      "description": "Discover and install agent skills from the open skills ecosystem using npx skills CLI",
+      "triggers": [
+        "find skill",
+        "install skill",
+        "search skills",
+        "how do I do X",
+        "is there a skill for"
+      ],
+      "prerequisites": [
+        "npx"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "tags": [
+        "skills",
+        "discovery",
+        "installation",
+        "package-manager"
+      ],
+      "last_updated": "2025-02-15"
+    },
+    {
+      "name": "mem-search",
+      "category": "memory",
+      "description": "Search claude-mem persistent cross-session memory database for past work, decisions, and discoveries",
+      "triggers": [
+        "mem search",
+        "memory search",
+        "did we already solve this",
+        "how did we do X last time",
+        "previous sessions"
+      ],
+      "prerequisites": [
+        "claude-mem MCP server"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "tags": [
+        "memory",
+        "search",
+        "cross-session",
+        "persistence"
+      ],
+      "last_updated": "2025-02-15"
+    },
+    {
+      "name": "remotion-best-practices",
+      "category": "video-creation",
+      "description": "Best practices for Remotion video creation in React including composition, animation, and rendering patterns",
+      "triggers": [
+        "Remotion best practices",
+        "video best practices",
+        "Remotion patterns"
+      ],
+      "prerequisites": [
+        "Remotion installed"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "tags": [
+        "remotion",
+        "video",
+        "react",
+        "animation",
+        "best-practices"
+      ],
+      "last_updated": "2025-02-15"
+    },
+    {
+      "name": "local-review",
+      "category": "code-quality",
+      "description": "Code review for uncommitted local changes (staged and unstaged) with optional focus areas",
+      "triggers": [
+        "code review",
+        "review changes",
+        "review local",
+        "review my code"
+      ],
+      "prerequisites": [
+        "Git"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "tags": [
+        "code-review",
+        "git",
+        "quality",
+        "local-changes"
+      ],
+      "last_updated": "2025-02-15"
     }
   ],
   "metadata": {
-    "total_skills": 7,
+    "total_skills": 11,
     "categories": [
       "installation",
       "video-creation",
       "design",
       "development",
       "startup-advisory",
-      "autonomous-development"
+      "autonomous-development",
+      "utility",
+      "memory",
+      "code-quality"
     ],
     "sync_instructions": {
       "push": "Use sync-skills.sh para enviar skills locais para GitHub",
