@@ -288,18 +288,47 @@
       "last_updated": "2025-02-15"
     }
   ],
+    {
+      "name": "mobile-developer",
+      "category": "mobile-development",
+      "description": "Cross-platform mobile specialist building performant native experiences with React Native and Flutter, focusing on platform-specific excellence and battery efficiency.",
+      "triggers": [
+        "React Native",
+        "Flutter",
+        "mobile app",
+        "iOS",
+        "Android",
+        "cross-platform",
+        "app store",
+        "mobile development"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "macOS",
+        "Linux",
+        "Windows"
+      ],
+      "tags": [
+        "mobile",
+        "React Native",
+        "Flutter",
+        "iOS",
+        "Android",
+        "cross-platform",
+        "performance"
+      ],
+      "last_updated": "2026-02-22"
+    }
+  ],
   "metadata": {
-    "total_skills": 11,
+    "total_skills": 7,
     "categories": [
       "installation",
       "video-creation",
       "design",
       "development",
       "startup-advisory",
-      "autonomous-development",
-      "utility",
-      "memory",
-      "code-quality"
+      "mobile-development"
     ],
     "sync_instructions": {
       "push": "Use sync-skills.sh para enviar skills locais para GitHub",
