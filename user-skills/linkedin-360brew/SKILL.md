@@ -292,6 +292,8 @@ Evite "O que você pensa?" — é vago demais. Use CTAs orientados a ação ou p
 
 Templates são esqueletos narrativos comprovados. A lógica de Eugene Schwartz aplica: *"Copy is not written. Copy is assembled."* Use como skeleton, troque uma variável por vez e preserve a estrutura.
 
+> **Ordem correta:** primeiro decida o **tipo de post** dentro do mix 50/25/15/10 (ver seção "Os 4 Tipos de Post" abaixo), depois escolha o template que serve aquele tipo. PASTOR combina com posts de conversão. Advice I Ignored combina com posts de história pessoal. Identity Upgrade combina com posts educacionais ou de framework proprietário.
+
 ### Template 1 — PASTOR (Justin Welsh)
 
 Framework persuasivo em 6 movimentos. É o mais versátil para posts que buscam converter atenção em lead ou ação concreta.
@@ -458,6 +460,8 @@ Promovem um recurso valioso (PDF, guia, template, ferramenta) em troca do email.
 - **Quando usar:** 15% do mix.
 
 > ⚠️ **Tensão com o 360Brew:** "comente PALAVRA para receber" é tecnicamente engagement bait, e o algoritmo penaliza essa mecânica quando ela soa gamificada. **Resolução:** funciona quando o recurso é genuinamente valioso, o framing é honesto, e o post entrega valor autônomo no corpo (não só promessa do recurso). Quando o conteúdo escrito vale o tempo de leitura mesmo sem o download, o sinal de qualidade compensa o engagement bait. Lead magnets fracos são duplamente penalizados — pelo engagement bait E pela ausência de valor próprio. Alternativa mais segura: link no primeiro comentário (com aviso explícito no post) em vez de "comente palavra".
+
+> **Conexão com Deplatforming:** o post de Lead Magnet é a porta de entrada do funil descrito na seção "Deplatforming" mais adiante. Cada lead magnet bem-sucedido transfere audiência da plataforma alugada (LinkedIn) para a plataforma própria (lista de email). Os 15% do mix dedicados a esse formato são o motor estrutural da independência algorítmica.
 
 ### 4. Posts de Conversão Direta
 
@@ -629,14 +633,15 @@ Antes de publicar um post de reposicionamento semântico, comentar estrategicame
 Quando o usuário pedir para criar um post:
 
 1. **Identificar o pilar temático** — o post se encaixa em qual dos 2-3 temas do usuário?
-2. **Definir o objetivo** — awareness (reach), educação (saves), conversão (DMs)?
-3. **Escolher o formato** — texto, carousel, vídeo, poll?
-4. **Escrever o Meat primeiro** — despejar o conteúdo bruto, sem hook
-5. **Escolher template persuasivo** — PASTOR, Identity Upgrade, Advice I Ignored ou estrutura livre
-6. **Escrever o hook (Trailer) por último** — preferir Tensão de Identidade, Distinção Analítica, Timestamp Transformation ou FOMO Insider
-7. **Verificar alinhamento semântico** — o vocabulário do post espelha o headline/About do perfil?
-8. **Checar o CTC** — nomeia setor ou grupo específico para atrair comentários qualificados?
-9. **Revisar o "Lost in Distance"** — as primeiras 2 frases entregam o sinal temático correto?
+2. **Identificar o tipo de post no mix** — educacional (50%), história pessoal (25%), lead magnet (15%) ou conversão direta (10%)? E o mix dos últimos 30 dias está equilibrado, ou há excesso de algum tipo?
+3. **Definir o objetivo do tipo** — awareness/saves (educacional), conexão (história), captura de email (lead magnet), receita (conversão)?
+4. **Escolher o formato** — texto, carousel, vídeo, poll?
+5. **Escrever o Meat primeiro** — despejar o conteúdo bruto, sem hook
+6. **Escolher template persuasivo alinhado ao tipo** — PASTOR para conversão, Advice I Ignored para história, Identity Upgrade para educacional/framework, ou estrutura livre
+7. **Escrever o hook (Trailer) por último** — preferir Tensão de Identidade, Distinção Analítica, Timestamp Transformation ou FOMO Insider
+8. **Verificar alinhamento semântico** — o vocabulário do post espelha o headline/About do perfil?
+9. **Checar o CTC** — nomeia setor ou grupo específico para atrair comentários qualificados?
+10. **Revisar o "Lost in Distance"** — as primeiras 2 frases entregam o sinal temático correto?
 
 ---
 
@@ -646,12 +651,14 @@ Quando o usuário trouxer um post para revisar:
 
 1. Analisar se o hook está nos primeiros 210 caracteres e usa um dos 4 padrões validados
 2. Verificar se o tema é explícito (satisfaz audit semântico do 360Brew)
-3. Checar estrutura lógica: premissa → desenvolvimento → conclusão (ou um dos templates validados)
-4. Se for post de newsletter: verificar se o corpo entrega argumento completo (não teaser)
-5. Identificar se há engagement bait ou hashtag stuffing para remover
-6. Avaliar se o CTC provoca reflexão ou é genérico demais
-7. Checar se a voz é autêntica ou soa como template de IA
-8. Se o post está copiando estrutura de outro criador, confirmar que só uma variável foi alterada
+3. Identificar qual tipo do mix 50/25/15/10 o post serve (educacional, história, lead magnet, conversão) e se o template escolhido combina com esse tipo
+4. Checar estrutura lógica: premissa → desenvolvimento → conclusão (ou um dos templates validados)
+5. Se for post de newsletter: verificar se o corpo entrega argumento completo (não teaser)
+6. Se for post de lead magnet: verificar se o corpo entrega valor autônomo independente do recurso prometido
+7. Identificar se há engagement bait gamificado ou hashtag stuffing para remover
+8. Avaliar se o CTC provoca reflexão ou é genérico demais
+9. Checar se a voz é autêntica ou soa como template de IA
+10. Se o post está copiando estrutura de outro criador, confirmar que só uma variável foi alterada
 
 ---
 
