@@ -1,11 +1,15 @@
 ---
 name: linkedin-360brew
 description: >
-  Cria, otimiza e revisa posts para o LinkedIn alinhados ao algoritmo 360Brew (2025-2026).
-  Use esta skill sempre que o usuário pedir para criar, melhorar, revisar ou adaptar
-  um post do LinkedIn — ou quiser estratégias de conteúdo, hooks, carrosseis,
-  CTAs e pilares temáticos para a plataforma. Também use quando o usuário mencionar
-  alcance, impressões, saves, thought leadership ou personal branding no LinkedIn.
+  Estratégia completa de presença e conteúdo no LinkedIn alinhada ao algoritmo
+  360Brew (2025-2026). Use esta skill quando o usuário pedir para: (1) criar,
+  otimizar ou revisar posts; (2) reposicionar perfil — headline, About, Featured,
+  Experience; (3) definir ICP, pilares de conteúdo e mix de tipos (educacional,
+  storytelling, lead magnet, conversão); (4) estruturar engajamento estratégico
+  e priming de algoritmo; (5) construir lista própria de email via lead magnets
+  e newsletter; (6) repurposing cross-platform (Instagram, X, newsletter, vídeo).
+  Também use ao mencionar alcance, impressões, saves, dwell time, thought
+  leadership, personal branding, growth, lead magnet ou newsletter no LinkedIn.
 ---
 
 # LinkedIn 360Brew — Skill de Conteúdo
