@@ -90,6 +90,100 @@ O modelo opera simultaneamente em feed, busca, notificações, newsletters e "Pe
 
 ---
 
+## Positioning, ICP e Arquitetura de Perfil
+
+Conteúdo só performa se o perfil sustenta a tese. Antes de criar qualquer post, três frentes precisam estar resolvidas: positioning, ICP e perfil otimizado para conversão. Esta seção é pré-requisito para tudo o que vem depois — pular essa etapa significa criar conteúdo bom que cresce sem converter.
+
+### Fórmula de Positioning
+
+Positioning forte responde a três perguntas em segundos:
+
+1. Qual problema você resolve?
+2. Para quem você resolve?
+3. O que torna sua abordagem diferente?
+
+A fórmula que organiza isso:
+
+> **Eu ajudo [audiência específica] a alcançar [resultado específico] através de [abordagem única].**
+
+"Eu ajudo empresas a crescer" não diz nada. "Eu ajudo founders B2B SaaS a reduzir churn em 40% através de sistemas de customer success" diz tudo. **Especificidade atrai** — o oposto do que a maioria assume.
+
+### O Triângulo de Autoridade
+
+Toda autoridade real se sustenta em pelo menos dois desses três pilares:
+
+- **Experiência** — o que você fez que prova que sabe (empresas construídas, resultados, anos no setor, desafios superados)
+- **Expertise** — o que você sabe que outros não sabem (frameworks próprios, insights, conhecimento acumulado)
+- **Evidência** — provas de que sua abordagem funciona (cases, depoimentos, resultados, reconhecimento)
+
+Não é necessário ter os três no mesmo nível. Um consultor com 20 anos de experiência e dezenas de cases tem autoridade sólida mesmo sem framework proprietário. Um founder jovem com abordagem revolucionária e evidência inicial tem autoridade mesmo sem décadas de história.
+
+**Regra prática:** identifique qual dos três é o mais forte hoje e lidere com esse no headline e nos posts de abertura de cluster.
+
+### ICP Deep Dive — As 5 Camadas
+
+ICP precisa ir além de demografia. As cinco camadas que importam:
+
+- **Demografia** — cargo, setor, tamanho de empresa, faixa de patrimônio, localização
+- **Psicografia** — ambições profissionais, valores que dirigem decisões, crenças sobre o setor, quem segue, como prefere aprender
+- **Pontos de dor** — problemas que tenta resolver hoje, frustrações diárias, o que tentou e não funcionou, o que teme, erros que comete sem perceber
+- **Outcomes desejados** — como sucesso se parece para essa pessoa, o que pagaria quase qualquer preço para alcançar, qual transformação busca
+- **Linguagem** — como descreve os próprios problemas, frases que usa, perguntas que faz, o que pesquisa online
+
+Salve o perfil de ICP e consulte-o antes de criar conteúdo. A pergunta de filtro: "meu ICP salvaria isso? Compartilharia com um colega?"
+
+### Arquitetura de Perfil
+
+#### Headline — Fórmula Direta
+
+A fórmula que entrega valor nos primeiros segundos:
+
+> **[O que você faz] para [quem você ajuda] | [credencial ou prova]**
+
+Exemplos:
+- "Ajudo founders B2B a transformar LinkedIn em motor de geração de leads | Construí 2 empresas a 7 dígitos com conteúdo"
+- "Coach de liderança para C-suite | Autor, palestrante TEDx, ex-Google"
+
+A maioria desperdiça o headline com "CEO da Empresa X" — visitante novo não consegue extrair valor disso. **Cargo é informação. Promessa é conversão.** O headline aparece em busca, comentários, DMs, notificações — é o crachá que viaja com você na plataforma inteira. 220 caracteres é o limite; use cada um.
+
+#### About — Estrutura em 5 Blocos
+
+1. **Hook de abertura (2-3 frases):** afirmação, pergunta ou problema que ressoa imediatamente com o ICP. Esses primeiros 270 caracteres aparecem antes do "ver mais" — a tese central precisa caber aqui.
+2. **Sua história (3-4 frases):** trajetória relevante para o que faz hoje. Foco em experiências que constroem credibilidade no positioning atual, não currículo cronológico.
+3. **O que você faz (3-4 frases):** explicação concreta de como ajuda, com outcomes específicos. Evite jargão; use a linguagem do ICP.
+4. **Quem você ajuda (2-3 frases):** descrição clara do ICP para que ele se reconheça e se auto-selecione.
+5. **CTA (1-2 frases):** próximo passo claro — seguir? mandar DM? acessar newsletter? visitar site?
+
+#### Featured — Vitrine de Conversão
+
+Três a cinco itens, no máximo, focados em conversão:
+- Posts de maior performance que demonstram expertise
+- Lead magnets ou recursos gratuitos que capturam email
+- Newsletter ou outros canais próprios
+- Cases ou depoimentos que constroem credibilidade
+
+Cada item deve servir o objetivo de conversão. Featured não é arquivo de orgulho; é landing page interna.
+
+#### Experience — Outcomes, Não Atividades
+
+❌ "Gerenciei equipe de 15 pessoas e liderei planejamento trimestral."
+✅ "Construí e escalei equipe de 3 para 15, desenvolvendo sistemas que aumentaram receita em 140% em 18 meses."
+
+Cada cargo deve demonstrar expertise relevante ao positioning atual, não listar responsabilidades.
+
+### Checklist de Auditoria de Perfil
+
+- [ ] Headline comunica o que faz, para quem, e a credencial em <220 caracteres
+- [ ] About abre com hook que cabe nos primeiros 270 caracteres
+- [ ] About fecha com CTA específico
+- [ ] About usa as mesmas palavras-chave dos posts (audit semântico do 360Brew)
+- [ ] Featured tem 3-5 itens orientados a conversão
+- [ ] Experience foca em outcomes mensuráveis
+- [ ] Skills validam expertise declarada nos posts
+- [ ] Foto profissional e banner reforçam positioning
+
+---
+
 ## Framework de Criação de Post
 
 ### Estrutura Base
@@ -335,6 +429,59 @@ Três regras de Lara Acosta (THE UK's #1 Female LinkedIn Creator, 325k seguidore
 
 ---
 
+## Os 4 Tipos de Post e o Mix Saudável (50/25/15/10)
+
+Cada tipo de post serve a um propósito diferente no funil. Misturá-los nas proporções certas é o que separa um perfil que cresce mas não converte de um que cresce **e** gera receita.
+
+### 1. Posts Educacionais / Cheat Sheets
+
+Conteúdo que ensina. Frameworks, checklists, breakdowns analíticos. Formato visual (carousel, infográfico) ou texto longo.
+
+- **Marca:** save-worthy. Quem lê quer voltar para consultar.
+- **Para que serve:** alcance, novos seguidores, autoridade percebida.
+- **Quando usar:** maioria do conteúdo (50% do mix).
+
+### 2. Posts de História Pessoal
+
+Narrativas em primeira pessoa sobre experiências, lições, erros, transformações. Não confessionário — narrativa com lição que conecta. Combina bem com o template Advice I Ignored.
+
+- **Marca:** trust-building. Quem lê sente que conhece você.
+- **Para que serve:** confiança, conexão, diferenciação de competidores.
+- **Quando usar:** 25% do mix.
+
+### 3. Posts de Lead Magnet
+
+Promovem um recurso valioso (PDF, guia, template, ferramenta) em troca do email. A mecânica viral típica: pedir para comentar uma palavra ou clicar no link nos comentários.
+
+- **Marca:** owned audience. Constrói lista própria fora do LinkedIn.
+- **Para que serve:** capturar email, escapar da dependência do algoritmo.
+- **Quando usar:** 15% do mix.
+
+> ⚠️ **Tensão com o 360Brew:** "comente PALAVRA para receber" é tecnicamente engagement bait, e o algoritmo penaliza essa mecânica quando ela soa gamificada. **Resolução:** funciona quando o recurso é genuinamente valioso, o framing é honesto, e o post entrega valor autônomo no corpo (não só promessa do recurso). Quando o conteúdo escrito vale o tempo de leitura mesmo sem o download, o sinal de qualidade compensa o engagement bait. Lead magnets fracos são duplamente penalizados — pelo engagement bait E pela ausência de valor próprio. Alternativa mais segura: link no primeiro comentário (com aviso explícito no post) em vez de "comente palavra".
+
+### 4. Posts de Conversão Direta
+
+Promovem oferta, serviço ou produto. CTA explícito (apply, book, comprar). Combina bem com o template PASTOR.
+
+- **Marca:** revenue. Pede a venda.
+- **Para que serve:** geração de receita direta.
+- **Quando usar:** 10% do mix — uso parcimonioso é deliberado.
+
+A maioria dos creators tem medo de vender no LinkedIn. Postam educacional para sempre e nunca pedem a venda. **A audiência quer saber como pode trabalhar com você.** Posts de conversão atendem quem está pronto para agir.
+
+### O Mix 50/25/15/10
+
+| Tipo | % do Mix | Função no funil |
+|---|---|---|
+| Educacional | 50% | Topo: alcance + autoridade |
+| História pessoal | 25% | Meio: confiança + conexão |
+| Lead magnet | 15% | Captura: lista própria |
+| Conversão direta | 10% | Fundo: receita |
+
+Esse equilíbrio garante valor entregue de forma constante, relacionamento sendo construído, audiência própria capturada e caminho aberto para quem quer comprar. **Auditar o mix mensalmente** — se 90% dos seus posts dos últimos 30 dias foram educacionais, você está crescendo seguidores mas não capturando receita.
+
+---
+
 ## Formatos e Performance
 
 ### Hierarquia de Formatos (2026)
@@ -409,14 +556,53 @@ Migre suas métricas de **reach para relevance**:
 | Comentários (qtd) | DMs originados do post | Conversão real de atenção |
 | Seguidores novos | Comment impressions | Você ganha reach nos comentários também |
 | Reach total | Engagement de nicho | Relevância > volume |
+| - | Email subscribers de lead magnets | Audiência que você efetivamente possui |
 
 O LinkedIn passou a mostrar também quantas pessoas **veem seus comentários** em outros posts — esse número frequentemente supera 2-3x as impressões dos próprios posts para comentadores ativos.
 
 ---
 
-## Estratégia de Comentários
+## Estratégia de Engajamento (30/30/30/10)
 
-Comentar estrategicamente em posts de referências do seu nicho é uma das táticas mais subestimadas:
+Criar conteúdo é metade do jogo. A outra metade é como você interage com posts dos outros. Engajamento serve a quatro funções: construir relacionamentos com potenciais clientes, ganhar visibilidade em audiências novas, fortalecer o entendimento que o algoritmo tem do perfil, e criar comunidade ao redor da marca.
+
+### A Regra 30/30/30/10 — Como Alocar Tempo de Engajamento
+
+| % | Onde engajar | Por quê |
+|---|---|---|
+| 30% | ICP (potenciais clientes) | Aparece no radar deles, abre conversas futuras |
+| 30% | Creators maiores que você | Comentários em posts populares são vistos por milhares |
+| 30% | Pares da indústria | Constrói rede para parcerias, indicações, oportunidades |
+| 10% | Amigos e colegas próximos | Reforça relacionamentos, base de engajamento de quem se importa |
+
+A maioria engaja só no quarto grupo (10%) e se pergunta por que o alcance estagnou. O leverage real está nos três primeiros — onde você está construindo audiência nova, não só conservando a existente.
+
+### Como Escrever Comentários Que São Notados
+
+A maioria dos comentários é esquecível. "Ótimo post!" e "Obrigado por compartilhar!" não constroem nada.
+
+Um bom comentário faz pelo menos uma de quatro coisas:
+
+1. **Adiciona valor** — insight, exemplo ou perspectiva que constrói sobre o post
+2. **Faz uma pergunta reflexiva** — algo que mostra leitura cuidadosa
+3. **Compartilha experiência relevante** — conecta o tema a algo que você viveu
+4. **Discorda com argumento** — visão contrária com raciocínio que sustenta
+
+O alvo: ser **o** comentário em que o leitor pausa, pensa, e talvez clique no perfil de quem escreveu.
+
+### Construindo Comunidade na Própria Caixa de Comentários
+
+A seção de comentários do próprio post é onde a comunidade se forma. Como você responde determina se as pessoas voltam.
+
+- Responder no máximo de comentários possível, especialmente nos primeiros 30 minutos
+- Estender a discussão com perguntas de follow-up
+- Reconhecer pontos específicos que cada pessoa fez (não só "obrigado")
+- Marcar outros comentadores quando os pontos se conectam
+- Compartilhar insights adicionais nos comentários — recompensa quem rola até o fim
+
+Quando os comentários funcionam como conversa em vez de broadcast, leitores tratam seus posts como ponto de encontro. Voltam pelo conteúdo **e** pela discussão.
+
+### Por Que Comentar É Subestimado
 
 - Adiciona perspectiva real (não "Ótimo post!")
 - Seu comentário fica visível para a audiência do creator — essencialmente "empréstimo de autoridade"
@@ -481,6 +667,125 @@ Frameworks permitem criar conteúdo consistente sem depender de storytelling vul
 
 ---
 
+## Deplatforming — Construindo Audiência Própria
+
+A verdade mais dura sobre LinkedIn: **você não é dono da sua audiência. A plataforma é.**
+
+A qualquer momento o algoritmo pode mudar e o alcance cair pela metade. Já aconteceu, vai acontecer de novo. Se a operação inteira depende de alcance no LinkedIn, é construir em terreno alugado.
+
+A solução é deplatforming sistemático — mover audiência do LinkedIn para canais que você controla. Email é o canal mais valioso, porque:
+
+- Você decide quando mandar
+- Nenhum algoritmo filtra a mensagem
+- É possível segmentar e personalizar
+- A lista é dado seu, não da plataforma
+- Funciona mesmo se o LinkedIn desaparecer
+
+### O Funil Lead Magnet → Email → Segmentação
+
+A forma mais eficiente de transformar audiência LinkedIn em lista própria:
+
+1. **Crie um lead magnet forte.** Recurso que o ICP genuinamente quer — framework, template, checklist, guia. Específico, não genérico. Resolve um problema real, ainda que pequeno.
+
+2. **Promova com post de Lead Magnet.** Hook + valor autônomo no corpo + CTA claro (link no primeiro comentário ou comente palavra-chave). O post deve entregar valor mesmo para quem não clica.
+
+3. **Capture o email em landing page.** O clique para "baixar" passa por landing com formulário. O recurso vai por email — que registra o assinante na lista.
+
+4. **Segmente conforme entrar.** Tag por qual lead magnet baixou, qual problema declarou. Permite follow-up direcionado.
+
+5. **Nutra com sequência de emails.** 3-5 emails entregando valor adicional e levando naturalmente até a oferta. Quem baixa um lead magnet está aquecido — não deixe esfriar.
+
+### Fundamentos da Newsletter
+
+- **Consistência > frequência.** Semanal é ideal para a maioria. Melhor mandar mensal com regularidade do que semanal aos trancos.
+- **Reaproveite os melhores posts.** O que performou bem no LinkedIn performa bem em email com expansão e adaptação.
+- **Tom pessoal.** Newsletter é mais íntima que post social. Escreva como quem manda email para um amigo, não broadcast.
+- **Valor explícito a cada envio.** Cada email deixa o leitor melhor do que entrou. Não envie só "novidades".
+- **Segmentação simples já paga.** Tags por tema de interesse ou produto adquirido aumentam conversão de forma desproporcional.
+
+### O Custo de Esperar
+
+Começar a lista de email tarde é o arrependimento mais comum entre creators consolidados. Construir 100 mil seguidores no LinkedIn sem ter capturado email significa que, se a plataforma muda as regras, a audiência se reconstrói do zero.
+
+**Regra prática:** comece a coletar email no primeiro post, não no centésimo.
+
+---
+
+## Repurposing Cross-Platform
+
+Criar conteúdo custa tempo e energia. Os melhores creators extraem múltiplos usos de cada peça.
+
+Uma ideia forte pode virar:
+
+- Post LinkedIn (texto)
+- Cheat sheet ou infográfico
+- Carousel
+- Seção de newsletter
+- Vídeo curto
+- Post Instagram (carousel ou estática)
+- Thread no X
+- Trecho de palestra ou webinar
+
+### Checklist de Repurposing
+
+Quando uma peça performa bem, rodar essa checklist:
+
+- [ ] Vira cheat sheet ou infográfico?
+- [ ] Expande para carousel?
+- [ ] Adapta para Instagram?
+- [ ] Vira seção de newsletter?
+- [ ] Conta como história em vídeo?
+- [ ] Quebra em vários posts menores?
+- [ ] Posso referenciar em conteúdo futuro?
+
+### LinkedIn → Instagram
+
+Cheat sheets e carousels que performaram bem no LinkedIn frequentemente performam **ainda melhor** no Instagram, com ajustes mínimos. A diferença chave: Instagram tolera menos venda direta. O conteúdo precisa parecer mais nativo da plataforma — visual-first, casual, menos copy persuasiva.
+
+Stories são canal complementar para conteúdo behind-the-scenes, polls, perguntas — humaniza a marca de forma que o feed não permite.
+
+### LinkedIn → Newsletter
+
+A regra inversa também vale: posts que performam bem no LinkedIn devem virar seções de newsletter, com expansão de 2-4x em densidade. O leitor de newsletter aceita conteúdo mais longo e técnico do que o leitor de feed. Isso conecta com o princípio da Lara Acosta de "repetição constrói reconhecimento" — a mesma tese rotacionada em formatos diferentes constrói cluster, não dilui.
+
+---
+
+## Timeline Realista — O Que Esperar Quando
+
+A maioria desiste nos meses 1-2 porque o resultado não veio imediatamente. Calibrar expectativa evita esse abandono.
+
+| Período | O que acontece |
+|---|---|
+| Meses 1-2 | Construção de fundação. Achar voz. Crescimento mínimo. |
+| Meses 3-4 | Conteúdo melhora. Engajamento sobe. Crescimento de seguidores começa a aparecer. |
+| Meses 5-6 | Momentum se forma. Oportunidades inbound começam. Lista de email cresce. |
+| Meses 7-12 | Resultados compostos. Fluxo consistente de leads. Autoridade estabelecida. |
+
+Quem trava no mês 2 nunca chega ao mês 6. **A diferença entre quem constrói LinkedIn relevante e quem desiste é resistência ao período de baixo retorno inicial.**
+
+### Plano de Execução em 4 Semanas
+
+**Semana 1 — Fundação**
+- Dias 1-2: positioning + Authority Triangle
+- Dias 3-4: ICP deep dive (5 camadas)
+- Dias 5-7: rewrite de headline + About + Featured + Experience
+
+**Semana 2 — Sistema de Conteúdo**
+- Dias 8-9: definir 3-5 pilares + 10 subtópicos por pilar
+- Dias 10-11: plano editorial das próximas 2 semanas + tipo de post para cada (educacional/história/lead magnet/conversão)
+- Dias 12-14: criar primeiros 5 posts + 1 lead magnet + landing page
+
+**Semana 3 — Engajamento**
+- Dias 15-17: identificar 20 perfis ICP + 10 creators maiores + 10 pares
+- Dias 18-21: 30 min/dia de engajamento antes de postar; responder próprios comentários em <30 min
+
+**Semana 4+ — Iterar e Escalar**
+- Revisar: o que performou? O que gerou conversa real?
+- Ajustar: dobrar no que funciona, cortar o que não funciona
+- Escalar: começar repurposing, intensificar captura de email, otimizar criação
+
+---
+
 ## Notas de Implementação
 
 - **Tempo para resultado:** ~90 dias de posting consistente e alinhado para o sistema construir o credibility cluster
@@ -490,3 +795,5 @@ Frameworks permitem criar conteúdo consistente sem depender de storytelling vul
 - **Company pages:** Alcance orgânico caiu muito mais para páginas. Employee advocacy coordenada (comentários de especialistas internos) compensa
 - **Reposicionamento semântico:** Primeiros posts após mudança de nicho performam abaixo da média histórica. Use o plano de priming de 15 dias antes de publicar o post de reposicionamento.
 - **Content Creative Fit:** vídeo nativo performa bem em 2026, mas não force formato em que você é ruim. Creator que odeia câmera fazendo vídeo ruim gera save-rate pior que o mesmo creator em texto bem escrito. Encontre o formato em que você é naturalmente forte e otimize ele.
+- **Email > followers:** a meta de longo prazo é número de assinantes de email, não número de seguidores. Followers é métrica da plataforma; email é métrica sua. Quando os dois números convergirem, você está pronto para reduzir dependência do LinkedIn.
+- **Auditoria mensal:** revisar o mix 50/25/15/10, taxa de captura de email por lead magnet post, e a divisão 30/30/30/10 do engajamento. Esses três indicadores revelam saúde estrutural da operação antes que apareça no número de followers.
