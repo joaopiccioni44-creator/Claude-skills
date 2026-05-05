@@ -22,6 +22,7 @@ from pathlib import Path
 # === Paths ===
 BASE = Path(__file__).parent
 FONTS = BASE / "fonts"
+LOGO = BASE / "logo"
 OUT = BASE
 
 # === Canvas ===
@@ -104,6 +105,53 @@ def draw_masthead_with_accent(draw, words_with_colors, position, font, gap_extra
     return x
 
 
+def tint_logo(logo_img, target_hex):
+    """
+    Tonaliza a logomarca para uma cor alvo, preservando alpha.
+    Usado para gerar a versão violet (paper) a partir da cream (dark).
+    """
+    # Hex -> RGB
+    target = tuple(int(target_hex[i:i+2], 16) for i in (1, 3, 5))
+    rgba = logo_img.convert("RGBA")
+    pixels = rgba.load()
+    w, h = rgba.size
+    for y in range(h):
+        for x in range(w):
+            r, g, b, a = pixels[x, y]
+            if a > 0:
+                # Aplica a cor alvo preservando alpha original
+                pixels[x, y] = (target[0], target[1], target[2], a)
+    return rgba
+
+
+def composite_logo(canvas, theme, logo_height=82, margin_right=64, margin_bottom=64):
+    """
+    Coloca a logomarca no canto inferior direito.
+    """
+    # Carrega logo cream (versão para fundo dark)
+    logo_path = LOGO / "wordmark-cream.png"
+    logo = Image.open(logo_path).convert("RGBA")
+
+    # Tonaliza se for paper (precisa virar violet pra contraste em fundo claro)
+    if theme["bg"] == PAPER["bg"]:
+        logo = tint_logo(logo, theme["signal"])
+
+    # Redimensiona mantendo aspect ratio
+    aspect = logo.width / logo.height
+    new_h = logo_height
+    new_w = int(new_h * aspect)
+    logo = logo.resize((new_w, new_h), Image.LANCZOS)
+
+    # Posiciona no canto inferior direito
+    x = canvas.width - new_w - margin_right
+    y = canvas.height - new_h - margin_bottom
+
+    # Cola com alpha compositing
+    canvas_rgba = canvas.convert("RGBA")
+    canvas_rgba.paste(logo, (x, y), logo)
+    return canvas_rgba.convert("RGB")
+
+
 def render_header(theme, eyebrow_text, manifesto_lines, tagline_text, output_path):
     """
     Renderiza um banner.
@@ -175,6 +223,9 @@ def render_header(theme, eyebrow_text, manifesto_lines, tagline_text, output_pat
             fill=theme["secondary"],
         )
 
+    # === Logomarca no canto inferior direito ===
+    img = composite_logo(img, theme, logo_height=82, margin_right=64, margin_bottom=64)
+
     img.save(output_path, "PNG", optimize=True)
     return output_path
 
@@ -183,7 +234,7 @@ def main():
     # === DARK PT — versão MINIMAL (sem tagline, masthead grande) ===
     out = render_header(
         theme=DARK,
-        eyebrow_text="CAPITAL PULSE · TESE ATIVA",
+        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
         manifesto_lines=[
             [("Conteúdo.", "primary")],
             [("Construção.", "primary")],
@@ -197,7 +248,7 @@ def main():
     # === DARK PT — versão FULL (com tagline) ===
     out = render_header(
         theme=DARK,
-        eyebrow_text="CAPITAL PULSE · TESE ATIVA",
+        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
         manifesto_lines=[
             [("Conteúdo.", "primary")],
             [("Construção.", "primary")],
@@ -211,7 +262,7 @@ def main():
     # === PAPER PT — versão MINIMAL ===
     out = render_header(
         theme=PAPER,
-        eyebrow_text="CAPITAL PULSE · TESE ATIVA",
+        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
         manifesto_lines=[
             [("Conteúdo.", "primary")],
             [("Construção.", "primary")],
@@ -225,7 +276,7 @@ def main():
     # === PAPER PT — versão FULL ===
     out = render_header(
         theme=PAPER,
-        eyebrow_text="CAPITAL PULSE · TESE ATIVA",
+        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
         manifesto_lines=[
             [("Conteúdo.", "primary")],
             [("Construção.", "primary")],
@@ -239,7 +290,7 @@ def main():
     # === DARK EN — versão MINIMAL ===
     out = render_header(
         theme=DARK,
-        eyebrow_text="CAPITAL PULSE · AI-NATIVE RESEARCH",
+        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
         manifesto_lines=[
             [("Content.", "primary")],
             [("Construction.", "primary")],
@@ -253,7 +304,7 @@ def main():
     # === DARK EN — versão FULL ===
     out = render_header(
         theme=DARK,
-        eyebrow_text="CAPITAL PULSE · AI-NATIVE RESEARCH",
+        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
         manifesto_lines=[
             [("Content.", "primary")],
             [("Construction.", "primary")],
