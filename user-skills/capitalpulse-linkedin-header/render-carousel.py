@@ -146,12 +146,12 @@ def render_slide_1(theme):
     tagline_y = masthead_y + line_height * 3 + 50
     draw.text(
         (MARGIN_X, tagline_y),
-        "Por que a maioria não tem ninguém",
+        "Por que a leitura de IA ainda não",
         font=FONT_TAGLINE(), fill=theme["secondary"],
     )
     draw.text(
         (MARGIN_X, tagline_y + 50),
-        "na sala que lê IA com profundidade.",
+        "chegou na sala onde se decide.",
         font=FONT_TAGLINE(), fill=theme["secondary"],
     )
 
@@ -168,7 +168,7 @@ def render_slide_2(theme):
     img = base_canvas(theme)
     draw = ImageDraw.Draw(img)
 
-    draw_eyebrow(draw, "EVIDÊNCIA · TRÊS PESQUISAS BR", theme)
+    draw_eyebrow(draw, "EVIDÊNCIA · TRÊS PESQUISAS BRASILEIRAS", theme)
 
     # Título compacto: uma linha só, violet
     draw.text((MARGIN_X, 175), "Convergem.", font=FONT_MASTHEAD_LG(), fill=theme["signal"])
@@ -185,7 +185,7 @@ def render_slide_2(theme):
     draw.text((MARGIN_X, block_y + 95), "sem gestão estruturada", font=FONT_BODY_LG(), fill=theme["primary"])
     draw.text((MARGIN_X, block_y + 137), "de risco em IA.", font=FONT_BODY_LG(), fill=theme["primary"])
     draw_tracked_text(
-        draw, "META + FUNDAÇÃO DOM CABRAL · 100 CEOs",
+        draw, "META + FUNDAÇÃO DOM CABRAL · 100 PRESIDENTES",
         (MARGIN_X, block_y + 195),
         FONT_SOURCE(), theme["tertiary"], tracking_em=0.10,
     )
@@ -215,9 +215,9 @@ def render_slide_2(theme):
 
     # Block 3 — IBGC
     block_y_3 = block_y_2 + 270
-    draw.text((MARGIN_X, block_y_3), "Top 3", font=FONT_NUMBER_SM(), fill=theme["signal"])
-    draw.text((MARGIN_X, block_y_3 + 95), "dos temas em que conselheiros", font=FONT_BODY_LG(), fill=theme["primary"])
-    draw.text((MARGIN_X, block_y_3 + 137), "se sentem menos preparados.", font=FONT_BODY_LG(), fill=theme["primary"])
+    draw.text((MARGIN_X, block_y_3), "3 temas", font=FONT_NUMBER_SM(), fill=theme["signal"])
+    draw.text((MARGIN_X, block_y_3 + 95), "em que conselheiros se sentem", font=FONT_BODY_LG(), fill=theme["primary"])
+    draw.text((MARGIN_X, block_y_3 + 137), "menos preparados — IA é um deles.", font=FONT_BODY_LG(), fill=theme["primary"])
     draw_tracked_text(
         draw, "IBGC · PERSPECTIVAS 2025 · 349 RESPONDENTES",
         (MARGIN_X, block_y_3 + 195),
@@ -237,15 +237,15 @@ def render_slide_3(theme):
     img = base_canvas(theme)
     draw = ImageDraw.Draw(img)
 
-    draw_eyebrow(draw, "INSIGHT", theme)
+    draw_eyebrow(draw, "DIAGNÓSTICO", theme)
 
-    # Estrutura: 3 negativas em sequência + 1 positiva em violet
+    # Estrutura: 3 afirmações em acumulação + 1 conclusão em violet (sem calque do inglês)
     y = 290
     line_h = 96
 
-    draw.text((MARGIN_X, y), "Não é capital.", font=FONT_MASTHEAD_LG(), fill=theme["secondary"])
-    draw.text((MARGIN_X, y + line_h), "Não é ferramenta.", font=FONT_MASTHEAD_LG(), fill=theme["secondary"])
-    draw.text((MARGIN_X, y + line_h * 2), "Não é mão de obra.", font=FONT_MASTHEAD_LG(), fill=theme["secondary"])
+    draw.text((MARGIN_X, y), "Há capital.", font=FONT_MASTHEAD_LG(), fill=theme["secondary"])
+    draw.text((MARGIN_X, y + line_h), "Há ferramenta.", font=FONT_MASTHEAD_LG(), fill=theme["secondary"])
+    draw.text((MARGIN_X, y + line_h * 2), "Há mão de obra.", font=FONT_MASTHEAD_LG(), fill=theme["secondary"])
 
     # Pulo + statement positivo em violet
     y_positive = y + line_h * 3 + 70
@@ -256,12 +256,12 @@ def render_slide_3(theme):
     tagline_y = y_positive + line_h * 2 + 60
     draw.text(
         (MARGIN_X, tagline_y),
-        "Quando a sala do conselho não lê fronteira,",
+        "Quando a sala do conselho não lê a fronteira,",
         font=FONT_TAGLINE_SM(), fill=theme["secondary"],
     )
     draw.text(
         (MARGIN_X, tagline_y + 38),
-        "a empresa default para inércia.",
+        "a empresa fica refém da inércia.",
         font=FONT_TAGLINE_SM(), fill=theme["secondary"],
     )
 
@@ -315,7 +315,7 @@ def render_slide_4(theme):
     tagline_y = y_base + block_h * 3 + 30
     draw.text(
         (MARGIN_X, tagline_y),
-        "Sem leitura na sala, default para Tradicional ou Evolução.",
+        "Sem leitura na sala, a empresa estaciona em Tradicional ou Evolução.",
         font=FONT_TAGLINE_SM(), fill=theme["secondary"],
     )
 
@@ -332,7 +332,7 @@ def render_slide_5(theme):
     img = base_canvas(theme)
     draw = ImageDraw.Draw(img)
 
-    draw_eyebrow(draw, "STAKE · DEVER FIDUCIÁRIO EMERGENTE", theme)
+    draw_eyebrow(draw, "O QUE ESTÁ EM JOGO · DEVER FIDUCIÁRIO EMERGENTE", theme)
 
     draw.text((MARGIN_X, 200), "Não é mais", font=FONT_MASTHEAD_LG(), fill=theme["primary"])
     draw_multicolor_line(
@@ -353,24 +353,24 @@ def render_slide_5(theme):
     line_gap = 200
 
     # 1
-    draw_tracked_text(draw, "EU AI ACT — ARTIGO 4", (MARGIN_X, y),
+    draw_tracked_text(draw, "LEI DE IA DA UE · ARTIGO 4", (MARGIN_X, y),
                       FONT_SOURCE(), theme["tertiary"], tracking_em=0.10)
     draw.text((MARGIN_X, y + 30), "Literacia em IA é obrigação", font=FONT_BODY_LG(), fill=theme["primary"])
     draw.text((MARGIN_X, y + 72), "para diretores, com regimes", font=FONT_BODY_LG(), fill=theme["primary"])
-    draw.text((MARGIN_X, y + 114), "de liability acionados.", font=FONT_BODY_LG(), fill=theme["primary"])
+    draw.text((MARGIN_X, y + 114), "de responsabilização acionados.", font=FONT_BODY_LG(), fill=theme["primary"])
 
     # 2
     y2 = y + line_gap
     draw_tracked_text(draw, "OXFORD LAW BLOGS · JAN 2026", (MARGIN_X, y2),
                       FONT_SOURCE(), theme["tertiary"], tracking_em=0.10)
     draw.text((MARGIN_X, y2 + 30), "Dois novos deveres fiduciários:", font=FONT_BODY_LG(), fill=theme["primary"])
-    draw.text((MARGIN_X, y2 + 72), "AI due care + AI loyalty oversight.", font=FONT_BODY_LG(), fill=theme["signal"])
+    draw.text((MARGIN_X, y2 + 72), "“AI due care” + “AI loyalty oversight”.", font=FONT_BODY_LG(), fill=theme["signal"])
 
     # 3 — global benchmark
     y3 = y2 + line_gap
-    draw_tracked_text(draw, "DELOITTE 2026 · GLOBAL BENCHMARK", (MARGIN_X, y3),
+    draw_tracked_text(draw, "DELOITTE 2026 · REFERÊNCIA GLOBAL", (MARGIN_X, y3),
                       FONT_SOURCE(), theme["tertiary"], tracking_em=0.10)
-    draw.text((MARGIN_X, y3 + 30), "79% dos boards globais —", font=FONT_BODY_LG(), fill=theme["primary"])
+    draw.text((MARGIN_X, y3 + 30), "79% dos conselhos globais —", font=FONT_BODY_LG(), fill=theme["primary"])
     draw.text((MARGIN_X, y3 + 72), "conhecimento limitado em IA.", font=FONT_BODY_LG(), fill=theme["primary"])
 
     draw_page_indicator(draw, 5, 6, theme)
@@ -405,7 +405,7 @@ def render_slide_6(theme):
     )
     draw.text(
         (MARGIN_X, sub_y + 38),
-        "Evolução tarde demais para destravar compounding.",
+        "Evolução tarde demais para destravar ganho composto.",
         font=FONT_TAGLINE_SM(), fill=theme["secondary"],
     )
 
@@ -419,7 +419,7 @@ def render_slide_6(theme):
     # CTA
     cta_y = cta_y_anchor + 35
     draw_tracked_text(
-        draw, "FOUNDER · C-LEVEL · CONSELHEIRO",
+        draw, "FUNDADOR · ALTA LIDERANÇA · CONSELHEIRO",
         (MARGIN_X, cta_y),
         FONT_SOURCE(), theme["tertiary"], tracking_em=0.14,
     )
@@ -430,7 +430,7 @@ def render_slide_6(theme):
     )
     draw.text(
         (MARGIN_X, cta_y + 80),
-        "Me manda DM.",
+        "Vamos conversar.",
         font=FONT_BODY_LG(), fill=theme["signal"],
     )
 
