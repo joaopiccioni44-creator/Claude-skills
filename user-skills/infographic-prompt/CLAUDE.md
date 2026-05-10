@@ -7,5 +7,6 @@
 
 | ID | Time | T | Title | Read |
 |----|------|---|-------|------|
+| #4261 | 10:01 AM | ✅ | Removed Duplicate LinkedIn Skill Reference | ~249 |
 | #4260 | 10:00 AM | ✅ | Removed Duplicate LinkedIn-360brew Reference from CLAUDE.md | ~243 |
 </claude-mem-context>
