@@ -161,6 +161,6 @@ A resposta às 6 perguntas costuma deixar claro qual tipo serve melhor o momento
 
 **Conexão com Deplatforming.** A meta de longo prazo é construir lista de email maior que número de seguidores. O mix 50/25/15/10 é o motor para chegar lá. *Para profundidade, ativar `linkedin-deplatforming` (quando criada).*
 
-**Engagement como multiplicador do mix.** O mix saudável funciona melhor quando combinado com a regra de engagement do top 1%: top creators respondem **255% mais comentários** que a média (134 replies/semana vs 38). Postar com o mix certo mas sem responder comentários ativos deixa metade do retorno na mesa. *Detalhes em `linkedin-engajamento` (quando criada).*
+**Engagement como multiplicador do mix.** O mix saudável funciona melhor quando combinado com a regra de engagement do top 1%: top creators respondem **255% mais comentários** que a média (134 replies/semana vs 38). Postar com o mix certo mas sem responder comentários ativos deixa metade do retorno na mesa. *Detalhes em `linkedin-engajamento`.*
 
 **Pipeline natural com outras skills:** decidir tipo aqui → escolher template (`linkedin-templates`) → escrever as 6 seções → ativar `linkedin-hooks` para o gancho → filtrar com `linkedin-voice-joao` → opcional `linkedin-post-doctor` para scoring /60 antes de publicar.

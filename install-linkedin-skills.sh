@@ -26,6 +26,9 @@ LINKEDIN_SKILLS=(
   "linkedin-voice-joao"
   "linkedin-templates"
   "linkedin-mix"
+  "linkedin-carousel"
+  "linkedin-newsletter-bridge"
+  "linkedin-engajamento"
 )
 
 echo -e "${BLUE}=== Instalação da suíte LinkedIn ===${NC}"

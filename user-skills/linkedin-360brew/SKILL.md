@@ -125,7 +125,7 @@ Esta skill é o núcleo conceitual e estratégico. Para trabalho profundo, ative
 
 Quando o usuário pedir um post completo, o pipeline natural é: definir pilar e tipo (`linkedin-mix`) → escrever as 6 seções (`linkedin-templates` se quiser skeleton) → ativar `linkedin-hooks` para o gancho → ativar `linkedin-voice-joao` como filtro final → opcional `linkedin-post-doctor` para diagnóstico antes de publicar.
 
-> Enquanto as satélites `linkedin-carousel`, `linkedin-newsletter-bridge`, `linkedin-profile`, `linkedin-engajamento`, `linkedin-deplatforming`, `linkedin-repurposing`, `linkedin-frameworks-ip` não existirem, o conteúdo completo está preservado em `_pre-refactor-backup.md` no diretório desta skill — recorra a ele se precisar de profundidade que ainda não foi migrada.
+> Enquanto as satélites `linkedin-profile`, `linkedin-deplatforming`, `linkedin-repurposing`, `linkedin-frameworks-ip` não existirem, o conteúdo completo está preservado em `_pre-refactor-backup.md` no diretório desta skill — recorra a ele se precisar de profundidade que ainda não foi migrada.
 
 ---
 
