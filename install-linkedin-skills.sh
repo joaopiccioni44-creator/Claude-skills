@@ -17,7 +17,11 @@ BLUE='\033[0;34m'
 NC='\033[0m'
 
 REPO_ROOT="$HOME/Claude-skills"
-CLAUDE_SKILLS_DIR="$HOME/.config/claude/skills"
+# Dois alvos: Claude Code CLI (~/.config/claude/skills) e Claude Desktop (~/.claude/skills)
+SKILL_TARGETS=(
+  "$HOME/.config/claude/skills"
+  "$HOME/.claude/skills"
+)
 
 LINKEDIN_SKILLS=(
   "linkedin-360brew"
@@ -36,28 +40,33 @@ echo -e "${BLUE}Máquina: $(hostname -s)${NC}"
 echo ""
 
 # ============================================================
-# Etapa 1 — Copiar skills do repo para ~/.config/claude/skills/
+# Etapa 1 — Symlink skills do repo para os diretórios-alvo
+# (Claude Code lê de ~/.config/claude/skills, Desktop de ~/.claude/skills)
+# Usar symlinks faz com que `git pull` propague mudanças sem reinstalar.
 # ============================================================
-echo -e "${BLUE}[1/3] Copiando skills para ~/.config/claude/skills/...${NC}"
+echo -e "${BLUE}[1/3] Symlinking skills para os dois diretórios-alvo...${NC}"
 
-mkdir -p "$CLAUDE_SKILLS_DIR"
+for target in "${SKILL_TARGETS[@]}"; do
+  echo -e "  ${BLUE}→ $target${NC}"
+  mkdir -p "$target"
 
-for skill in "${LINKEDIN_SKILLS[@]}"; do
-  src="$REPO_ROOT/user-skills/$skill"
-  dst="$CLAUDE_SKILLS_DIR/$skill"
+  for skill in "${LINKEDIN_SKILLS[@]}"; do
+    src="$REPO_ROOT/user-skills/$skill"
+    dst="$target/$skill"
 
-  if [ ! -d "$src" ]; then
-    echo -e "  ${RED}✗ $skill — fonte não encontrada em $src${NC}"
-    continue
-  fi
+    if [ ! -d "$src" ]; then
+      echo -e "    ${RED}✗ $skill — fonte não encontrada em $src${NC}"
+      continue
+    fi
 
-  # Remove versão antiga se existir (para evitar arquivos órfãos)
-  if [ -d "$dst" ]; then
-    rm -rf "$dst"
-  fi
+    # Remove versão antiga (cópia ou symlink quebrado) e cria symlink novo
+    if [ -e "$dst" ] || [ -L "$dst" ]; then
+      rm -rf "$dst"
+    fi
 
-  cp -r "$src" "$dst"
-  echo -e "  ${GREEN}✓ $skill${NC}"
+    ln -s "$src" "$dst"
+    echo -e "    ${GREEN}✓ $skill${NC}"
+  done
 done
 
 echo ""
@@ -119,7 +128,11 @@ echo ""
 # ============================================================
 echo -e "${BLUE}[3/3] Concluído.${NC}"
 echo ""
-echo -e "${GREEN}✓ Suíte LinkedIn instalada em $CLAUDE_SKILLS_DIR${NC}"
+echo -e "${GREEN}✓ Suíte LinkedIn symlinkada em:${NC}"
+for target in "${SKILL_TARGETS[@]}"; do
+  echo -e "${GREEN}    - $target${NC}"
+done
+echo -e "${GREEN}  (fonte única: $REPO_ROOT/user-skills/ — git pull propaga automático)${NC}"
 
 # Lembrete sobre o conflito com o plugin oficial
 if command -v claude &>/dev/null; then
@@ -131,4 +144,7 @@ if command -v claude &>/dev/null; then
 fi
 
 echo ""
-echo -e "${GREEN}Próximo passo: reinicie o Claude Code para carregar as novas skills.${NC}"
+echo -e "${GREEN}Próximos passos:${NC}"
+echo -e "${GREEN}  1. Reinicie o Claude Code (para carregar via ~/.config/claude/skills/).${NC}"
+echo -e "${GREEN}  2. Reinicie o Claude Desktop app (Cmd+Q e abrir de novo).${NC}"
+echo -e "${GREEN}  3. No Desktop: Settings → Capabilities → 'Code execution and file creation' deve estar ON.${NC}"
