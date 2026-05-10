@@ -21,6 +21,20 @@ Análise comparativa de posts reais mostrou diferença de **14x no alcance** ent
 
 ---
 
+## As 3 Qualidades de um Hook Forte
+
+Independente do padrão escolhido, todo hook forte tem ao menos uma destas três qualidades. Hooks que não têm nenhuma das três falham invariavelmente.
+
+**1. Surpreender com algo que o leitor não esperava.** O cérebro engaja com violação de expectativa. "A próxima Renaissance Technologies vai começar com cinco pessoas, dois MacBooks e GitHub aberto" surpreende porque desafia a imagem mental que o leitor tinha sobre como hedge funds nascem.
+
+**2. Nomear um problema que o leitor está sentindo agora.** Identificação instantânea. "O analista que ainda lê PDF de relatório virou commodity em 2026" nomeia uma ansiedade que muitos analistas tradicionais sentem mas não verbalizam.
+
+**3. Prometer recompensa específica por continuar lendo.** Curiosity gap honesto. "O framework que uso para avaliar risco de crédito em 3 etapas:" promete entrega concreta. A promessa precisa ser cumprida no corpo, ou vira clickbait penalty.
+
+**Hook fraco** é aquele que poderia aparecer no topo de cem posts diferentes escritos por cem pessoas diferentes. Se o hook não passa o teste "isso poderia ser dito por qualquer um sobre qualquer coisa?", reescrever.
+
+---
+
 ## Tracker — Consulta Obrigatória Antes de Propor
 
 **Path do tracker:**
@@ -165,6 +179,66 @@ Cada padrão lista: *fórmula esquemática*, *exemplo validado*, *quando funcion
 **Quando preferir:** posts sobre momentos de mercado reais com janela de oportunidade identificável.
 
 **Armadilha:** se a promessa não é entregue no corpo (sem tese concreta, sem dado, sem ângulo novo), o algoritmo pune como hook enganoso. É o padrão com maior risco de clickbait penalty.
+
+---
+
+## Biblioteca de Templates Específicos por Categoria
+
+Os 10 padrões acima são **arquétipos** com armadilha específica. Esta seção traz **templates prontos** por categoria — esqueletos com lacunas em colchetes para preencher. Quanto mais específico o preenchimento, melhor o hook performa. São complementares aos padrões: muitos templates encaixam em mais de um padrão (ex: um template de Story pode ser ao mesmo tempo Insight Pessoal e Timestamp Transformation).
+
+### Curiosity (5 templates)
+
+- *"Depois de [N] anos fazendo [prática comum], descobri por que a maioria dos [audiência] nunca [outcome]."*
+- *"O jeito como a maioria dos [audiência] aborda [tema] é a razão de continuarem travados em [problema]."*
+- *"Um [cliente/parceiro] me contou algo na semana passada sobre [tema] que eu nunca tinha considerado."*
+- *"Existe uma razão pela qual seu [coisa] continua [problema], e não tem nada a ver com [suposição comum]."*
+- *"Eu acreditava em [crença comum]. Aí [evento específico] aconteceu e hoje vejo isso de forma completamente diferente."*
+
+### Contrarian (5 templates)
+
+- *"Todo mundo diz que você precisa de [conselho comum] para conseguir [outcome]. Eu construí [prova] fazendo o oposto."*
+- *"O conselho de [prática comum] é a pior coisa que se pode dar a um [audiência] iniciante."*
+- *"A maioria das pessoas que ensinam [tema] online nunca de fato fez isso."*
+- *"Eu discordo de quase todo conselho de [tema] circulando no LinkedIn agora."*
+- *"Você não precisa de [requisito comum] para [outcome]. Eu construí [prova específica] sem nada disso."*
+
+### Story (5 templates)
+
+- *"Três anos atrás eu estava [ponto baixo]. Hoje eu rodo [outcome contrastante]. O que mudou no meio."*
+- *"Um founder que assessorei mês passado chegou com [problema]. Em [período] tinha [outcome]. Como aconteceu."*
+- *"A primeira vez que tentei [coisa], perdi [perda específica]. A segunda me ensinou algo que hoje compartilho com todo cliente."*
+- *"Ontem alguém me perguntou como fui de [situação antiga] para [situação atual]. A resposta começa em um momento de [ano]."*
+- *"Quase desisti de [coisa] em [ano]. Aí [pessoa específica] me disse algo que nunca esqueci."*
+
+### Listicle (5 templates)
+
+- *"Cinco coisas que eu queria ter ouvido antes de começar [tema]."*
+- *"Três hábitos que silenciosamente mataram meu [outcome] nos primeiros dois anos."*
+- *"Sete perguntas que faço a todo [audiência] antes de aceitar trabalhar junto."*
+- *"Quatro sinais de que você está pronto para [próximo passo], e um sinal de que você não está."*
+- *"Os seis conselhos que daria ao meu eu mais novo sobre construir [coisa]."*
+
+### Transformation (5 templates)
+
+- *"Seis meses atrás eu não conseguia [skill]. Hoje eu [outcome]. A virada veio de uma única mudança específica."*
+- *"Meu [métrica] foi de [número baixo] para [número alto] em [período]. O que de fato moveu o ponteiro."*
+- *"Saí de [situação anterior] para [situação atual] fazendo o trabalho não-glamoroso que ninguém comenta."*
+- *"O eu de dois anos atrás não reconheceria o negócio que eu rodo hoje."*
+- *"Minha primeira [coisa] gerou [outcome baixo]. Minha mais recente gerou [outcome alto]. A diferença é uma única skill."*
+
+### Question (5 templates)
+
+- *"O que separa os [audiência] que [têm sucesso] dos que ficam travados por anos?"*
+- *"Por que tantos [audiência] confundem estar ocupado com fazer progresso real?"*
+- *"Quando foi a última vez que seu [coisa] de fato moveu o ponteiro do seu negócio?"*
+- *"Como seria seu [coisa] se você parasse de perseguir [prática comum] amanhã?"*
+- *"Onde você vai estar em doze meses se nada na sua abordagem atual mudar?"*
+
+### Como usar os templates
+
+São **esqueletos**, não hooks finais. Trocar os colchetes por especificidade real do João: nomes de empresas que ele conhece (Renaissance Technologies, Stratechery), métricas que ele acompanha, datas verificáveis da carreira, públicos nomeados (alocador de FIA, gestor de FIM, head de research em casa de análise). Quanto mais o hook poderia ser dito apenas pelo João, melhor performa.
+
+Os templates **não substituem o tracker** — escolher template ainda é escolha de padrão (Story → Insight Pessoal ou Timestamp Transformation; Contrarian → padrão Contrarian; Curiosity → Distinção Analítica ou Pergunta Provocativa). Antes de propor, validar contra o tracker.
 
 ---
 

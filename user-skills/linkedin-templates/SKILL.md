@@ -27,6 +27,14 @@ A premissa de Eugene Schwartz vale: *"Copy is not written. Copy is assembled."* 
 
 ---
 
+## A Camada Acima dos Templates: Estrutura de 6 Seções
+
+Antes de escolher PASTOR, Identity Upgrade ou Advice I Ignored, vale lembrar que **todo post forte atravessa 6 seções funcionais**: Hook, Pain Points, Actionable Value, Dream Picture, Engagement Question, CTA. Cada template implementa essas 6 seções de um jeito diferente — alguns com mais ênfase em Pain Points (PASTOR), outros em Dream Picture (Identity Upgrade), outros em Story como ponte para Actionable Value (Advice I Ignored).
+
+Quando um template não encaixa naturalmente no que se quer escrever, voltar à estrutura crua de 6 seções costuma resolver. Para profundidade na estrutura e como avaliar cada seção, ver `linkedin-360brew` (estrutura) e `linkedin-post-doctor` (scoring /60 por seção).
+
+---
+
 ## Mapeamento Template ↔ Tipo de Post
 
 A regra de coerência: o template precisa servir o tipo do post, não o contrário.

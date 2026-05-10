@@ -23,6 +23,23 @@ A regra da auditoria é mensal. **Antes de planejar a próxima semana, olhar par
 
 ---
 
+## Categoria Temática Transversal: Career Development
+
+Antes de entrar nos 4 tipos, uma observação macro do Q1 2026 report (397.605 posts analisados): **posts da categoria Career Development têm 2.5x mais probabilidade de viralizar que qualquer outra categoria** (acima de Industry Trends, AI/Technology, Leadership, Personal Achievement, etc.).
+
+"Career Development" inclui: transições de carreira, viradas profissionais, lições de quem mudou de área, navegação entre setores, histórias de aprendizado em mudança de função.
+
+**Para o João, isso conecta diretamente com o positioning *practitioner-turned-builder*:** 15 anos no asset management institucional → fundador de Capital Pulse e construtor de PulseInvest. A transição é Career Development viralizável. Posts que ancoram nessa narrativa (mesmo dentro dos pilares AI ou mercado) tendem a performar acima da média.
+
+**Como aplicar:** dentro de qualquer tipo do mix (educacional, história pessoal, lead magnet, conversão), considerar adicionar um ângulo de Career Development quando faz sentido. Exemplos:
+- Educacional sobre AI no mercado financeiro → enquadrar com "o que aprendi gerindo bilhões antes de virar AI-native"
+- História pessoal → naturalmente já é Career Development se conta a virada
+- Lead magnet → recurso pode ser "Como gestores tradicionais constroem stack AI sem programar"
+
+Não significa transformar todo post em narrativa de carreira (isso queima rápido); significa identificar quando o ângulo Career Development eleva um post que de outra forma seria mais um educacional analítico genérico.
+
+---
+
 ## Os 4 Tipos de Post
 
 ### 1. Educacional / Cheat Sheet (50% do mix)
@@ -58,6 +75,8 @@ Promovem um **recurso valioso** (PDF, guia, template, ferramenta) em troca do em
 > **Alternativa mais segura:** link no primeiro comentário (com aviso explícito no post) em vez de "comente palavra". Tira o gatilho gamificado mas mantém o funil.
 
 > **Conexão com Deplatforming:** o post de lead magnet é a porta de entrada do funil de email. Cada lead magnet bem-sucedido transfere audiência da plataforma alugada (LinkedIn) para a plataforma própria (lista de email). Os 15% do mix dedicados a esse formato são o motor estrutural da independência algorítmica.
+
+> **Lead magnets que estão funcionando agora (Q1 2026):** o report mostra a substituição do formato GPTs (2.468/3.969 comments) pelo formato Claude Skills (4.058/5.473 comments) como recurso de maior conversão. Para o João, que está literalmente construindo skills de LinkedIn agora, isso é informação acionável imediata — as próprias skills criadas (`linkedin-hooks`, `linkedin-post-doctor`, `linkedin-voice-joao`) podem virar lead magnet empacotando metodologia + frameworks + tracker de hooks. Conecta naturalmente com os pilares AI/tech e thought leadership.
 
 ### 4. Conversão Direta (10% do mix)
 
@@ -142,4 +161,6 @@ A resposta às 6 perguntas costuma deixar claro qual tipo serve melhor o momento
 
 **Conexão com Deplatforming.** A meta de longo prazo é construir lista de email maior que número de seguidores. O mix 50/25/15/10 é o motor para chegar lá. *Para profundidade, ativar `linkedin-deplatforming` (quando criada).*
 
-**Pipeline natural com outras skills:** decidir tipo aqui → escolher template (`linkedin-templates`) → escrever Meat → ativar `linkedin-hooks` para o gancho → filtrar com `linkedin-voice-joao` → opcional `linkedin-post-doctor` antes de publicar.
+**Engagement como multiplicador do mix.** O mix saudável funciona melhor quando combinado com a regra de engagement do top 1%: top creators respondem **255% mais comentários** que a média (134 replies/semana vs 38). Postar com o mix certo mas sem responder comentários ativos deixa metade do retorno na mesa. *Detalhes em `linkedin-engajamento` (quando criada).*
+
+**Pipeline natural com outras skills:** decidir tipo aqui → escolher template (`linkedin-templates`) → escrever as 6 seções → ativar `linkedin-hooks` para o gancho → filtrar com `linkedin-voice-joao` → opcional `linkedin-post-doctor` para scoring /60 antes de publicar.
