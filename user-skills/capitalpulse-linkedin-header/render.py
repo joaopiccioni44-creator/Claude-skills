@@ -234,10 +234,10 @@ def main():
     # === DARK PT — versão MINIMAL (sem tagline, masthead grande) ===
     out = render_header(
         theme=DARK,
-        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
+        eyebrow_text="STUDIO · EDITORIAL · CAPITAL",
         manifesto_lines=[
-            [("Conteúdo.", "primary")],
             [("Construção.", "primary")],
+            [("Conteúdo.", "primary")],
             [("Capital.", "signal")],
         ],
         tagline_text=None,
@@ -248,13 +248,13 @@ def main():
     # === DARK PT — versão FULL (com tagline) ===
     out = render_header(
         theme=DARK,
-        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
+        eyebrow_text="STUDIO · EDITORIAL · CAPITAL",
         manifesto_lines=[
-            [("Conteúdo.", "primary")],
             [("Construção.", "primary")],
+            [("Conteúdo.", "primary")],
             [("Capital.", "signal")],
         ],
-        tagline_text="Análise editorial, alocação e construção na fronteira entre mercados e IA",
+        tagline_text="Construímos, escrevemos e alocamos na fronteira entre mercado e IA",
         output_path=str(OUT / "linkedin-header-pt-dark-full-1584x396.png"),
     )
     print(f"✓ Generated: {out}")
@@ -262,10 +262,10 @@ def main():
     # === PAPER PT — versão MINIMAL ===
     out = render_header(
         theme=PAPER,
-        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
+        eyebrow_text="STUDIO · EDITORIAL · CAPITAL",
         manifesto_lines=[
-            [("Conteúdo.", "primary")],
             [("Construção.", "primary")],
+            [("Conteúdo.", "primary")],
             [("Capital.", "signal")],
         ],
         tagline_text=None,
@@ -276,13 +276,13 @@ def main():
     # === PAPER PT — versão FULL ===
     out = render_header(
         theme=PAPER,
-        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
+        eyebrow_text="STUDIO · EDITORIAL · CAPITAL",
         manifesto_lines=[
-            [("Conteúdo.", "primary")],
             [("Construção.", "primary")],
+            [("Conteúdo.", "primary")],
             [("Capital.", "signal")],
         ],
-        tagline_text="Análise editorial, alocação e construção na fronteira entre mercados e IA",
+        tagline_text="Construímos, escrevemos e alocamos na fronteira entre mercado e IA",
         output_path=str(OUT / "linkedin-header-pt-paper-full-1584x396.png"),
     )
     print(f"✓ Generated: {out}")
@@ -290,10 +290,10 @@ def main():
     # === DARK EN — versão MINIMAL ===
     out = render_header(
         theme=DARK,
-        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
+        eyebrow_text="STUDIO · EDITORIAL · CAPITAL",
         manifesto_lines=[
-            [("Content.", "primary")],
             [("Construction.", "primary")],
+            [("Content.", "primary")],
             [("Capital.", "signal")],
         ],
         tagline_text=None,
@@ -304,13 +304,13 @@ def main():
     # === DARK EN — versão FULL ===
     out = render_header(
         theme=DARK,
-        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
+        eyebrow_text="STUDIO · EDITORIAL · CAPITAL",
         manifesto_lines=[
-            [("Content.", "primary")],
             [("Construction.", "primary")],
+            [("Content.", "primary")],
             [("Capital.", "signal")],
         ],
-        tagline_text="Editorial research, allocation and construction at the frontier of markets and AI",
+        tagline_text="We build, write and allocate at the frontier between markets and AI",
         output_path=str(OUT / "linkedin-header-en-dark-full-1584x396.png"),
     )
     print(f"✓ Generated: {out}")

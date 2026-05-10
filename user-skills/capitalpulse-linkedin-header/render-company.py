@@ -134,13 +134,13 @@ def main():
     # === DARK PT — versão FULL (com tagline) — recomendada ===
     out = render_company_banner(
         theme=DARK,
-        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
+        eyebrow_text="STUDIO · EDITORIAL · CAPITAL",
         manifesto_words=[
-            ("Conteúdo.", "primary"),
             ("Construção.", "primary"),
+            ("Conteúdo.", "primary"),
             ("Capital.", "signal"),
         ],
-        tagline_text="Análise editorial, alocação e construção na fronteira entre mercados e IA",
+        tagline_text="Construímos, escrevemos e alocamos na fronteira entre mercado e IA",
         output_path=str(OUT / "linkedin-company-pt-dark-full-1128x191.png"),
     )
     print(f"✓ Generated: {out}")
@@ -148,10 +148,10 @@ def main():
     # === DARK PT — versão MINIMAL (sem tagline) ===
     out = render_company_banner(
         theme=DARK,
-        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
+        eyebrow_text="STUDIO · EDITORIAL · CAPITAL",
         manifesto_words=[
-            ("Conteúdo.", "primary"),
             ("Construção.", "primary"),
+            ("Conteúdo.", "primary"),
             ("Capital.", "signal"),
         ],
         tagline_text=None,
@@ -162,13 +162,13 @@ def main():
     # === DARK EN — versão FULL ===
     out = render_company_banner(
         theme=DARK,
-        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
+        eyebrow_text="STUDIO · EDITORIAL · CAPITAL",
         manifesto_words=[
-            ("Content.", "primary"),
             ("Construction.", "primary"),
+            ("Content.", "primary"),
             ("Capital.", "signal"),
         ],
-        tagline_text="Editorial research, allocation and construction at the frontier of markets and AI",
+        tagline_text="We build, write and allocate at the frontier between markets and AI",
         output_path=str(OUT / "linkedin-company-en-dark-full-1128x191.png"),
     )
     print(f"✓ Generated: {out}")
@@ -176,13 +176,13 @@ def main():
     # === PAPER PT — versão FULL ===
     out = render_company_banner(
         theme=PAPER,
-        eyebrow_text="RESEARCH · STUDIO · CAPITAL",
+        eyebrow_text="STUDIO · EDITORIAL · CAPITAL",
         manifesto_words=[
-            ("Conteúdo.", "primary"),
             ("Construção.", "primary"),
+            ("Conteúdo.", "primary"),
             ("Capital.", "signal"),
         ],
-        tagline_text="Análise editorial, alocação e construção na fronteira entre mercados e IA",
+        tagline_text="Construímos, escrevemos e alocamos na fronteira entre mercado e IA",
         output_path=str(OUT / "linkedin-company-pt-paper-full-1128x191.png"),
     )
     print(f"✓ Generated: {out}")
