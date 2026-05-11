@@ -174,6 +174,16 @@ def make_stacked_logo(size, bg_hex, logo_color_hex):
 
 def make_monogram(size, bg_hex, logo_color_hex):
     """Versão só com o 'C' estilizado, centralizado."""
+    return make_monogram_punch(size, bg_hex, logo_color_hex, c_ratio=0.55)
+
+
+def make_monogram_punch(size, bg_hex, logo_color_hex, c_ratio=0.75):
+    """
+    Monograma com tamanho do C parametrizável.
+    c_ratio: fração do canvas ocupada pela maior dimensão do C
+    (0.55 = elegante mas tímido para avatar pequeno,
+     0.75 = punch máximo para avatares e listagens em escala pequena)
+    """
     canvas = Image.new("RGB", (size, size), bg_hex)
     logo = Image.open(LOGO / "wordmark-cream.png").convert("RGBA")
     monogram = crop_monogram(logo)
@@ -181,8 +191,7 @@ def make_monogram(size, bg_hex, logo_color_hex):
     if logo_color_hex != "#F2F1EB" and logo_color_hex.upper() != "#F0EDE6":
         monogram = tint_logo(monogram, logo_color_hex)
 
-    # 55% do tamanho para o C ficar imponente
-    available = int(size * 0.55)
+    available = int(size * c_ratio)
     aspect = monogram.width / monogram.height
 
     if aspect > 1:
@@ -342,6 +351,25 @@ def main():
     img = make_stacked_logo(400, DARK["bg"], DARK["primary"])
     img.save(OUT / "logo-stack-dark-400x400.png", "PNG", optimize=True)
     print(f"✓ F-400: logo-stack-dark-400x400.png")
+
+    # === Avatar Variants — monograma "punch" para escala pequena ===
+    # G-A: Cream sobre dark, C bem maior (75% do canvas)
+    img = make_monogram_punch(1080, DARK["bg"], DARK["primary"], c_ratio=0.75)
+    img.save(OUT / "avatar-A-cream-on-dark-1080x1080.png", "PNG", optimize=True)
+    img.resize((400, 400), Image.LANCZOS).save(OUT / "avatar-A-cream-on-dark-400x400.png", "PNG", optimize=True)
+    print(f"✓ G-A: avatar-A-cream-on-dark (cream / dark)")
+
+    # G-B: Cream sobre violet — punch máximo
+    img = make_monogram_punch(1080, DARK["signal"], DARK["primary"], c_ratio=0.75)
+    img.save(OUT / "avatar-B-cream-on-violet-1080x1080.png", "PNG", optimize=True)
+    img.resize((400, 400), Image.LANCZOS).save(OUT / "avatar-B-cream-on-violet-400x400.png", "PNG", optimize=True)
+    print(f"✓ G-B: avatar-B-cream-on-violet (cream / violet)")
+
+    # G-C: Violet sobre dark — accent invertido
+    img = make_monogram_punch(1080, DARK["bg"], DARK["signal"], c_ratio=0.75)
+    img.save(OUT / "avatar-C-violet-on-dark-1080x1080.png", "PNG", optimize=True)
+    img.resize((400, 400), Image.LANCZOS).save(OUT / "avatar-C-violet-on-dark-400x400.png", "PNG", optimize=True)
+    print(f"✓ G-C: avatar-C-violet-on-dark (violet / dark)")
 
     # === SVG: variante A em formato vetorial via embed PNG ===
     make_svg_embed_png(path_a, 1080, 1080, OUT / "logo-square-dark-1080x1080.svg")
