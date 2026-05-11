@@ -168,30 +168,21 @@ def render_company_header(option_letter, cell_size):
     canvas = Image.new("RGB", (w, h), LK_BG)
     draw = ImageDraw.Draw(canvas)
 
-    # Banner no topo (~40% da altura)
+    # Banner no topo (~40% da altura) — versão simplificada para focar no avatar
     banner_h = int(h * 0.42)
+    banner = Image.new("RGB", (w, banner_h), INK_BG)
+    bdraw = ImageDraw.Draw(banner)
 
-    # Carregar o banner real da Capital Pulse Company Page (1128x191) e adaptar
-    banner_src = MARCA.parent / "LinkedIn" / "banners-company-page" / "linkedin-company-pt-dark-full-1128x191.png"
-    if banner_src.exists():
-        banner = Image.open(banner_src).convert("RGB")
-        # Resize mantendo aspect, depois crop center
-        banner_aspect = banner.width / banner.height
-        target_aspect = w / banner_h
-        if banner_aspect > target_aspect:
-            new_h = banner_h
-            new_w = int(new_h * banner_aspect)
-            banner = banner.resize((new_w, new_h), Image.LANCZOS)
-            left = (new_w - w) // 2
-            banner = banner.crop((left, 0, left + w, new_h))
-        else:
-            new_w = w
-            new_h = int(new_w / banner_aspect)
-            banner = banner.resize((new_w, new_h), Image.LANCZOS)
-            top = (new_h - banner_h) // 2
-            banner = banner.crop((0, top, new_w, top + banner_h))
-    else:
-        banner = Image.new("RGB", (w, banner_h), INK_BG)
+    # Pequenos elementos visuais discretos pra parecer banner real sem competir
+    # com o avatar (que é o foco)
+    label_y = 30
+    draw_tracked(bdraw, "CAPITAL PULSE · STUDIO · EDITORIAL · CAPITAL",
+                 (40, label_y), F_MONO(12), "#A8AAB4", 0.14)
+
+    # Linha discreta de manifesto pequeno
+    bdraw.text((40, banner_h - 60),
+               "Venture studio brasileiro AI-native",
+               font=F_ITALIC(16), fill="#A8AAB4")
 
     canvas.paste(banner, (0, 0))
     draw = ImageDraw.Draw(canvas)
@@ -371,16 +362,17 @@ def render_mockup_grid():
               font=F_BODY(15), fill=LK_TEXT_MUTED)
 
     # === Column headers (opções A, B, C) ===
-    col_y = HEADER_H - 30
+    col_y = HEADER_H - 50
     col_labels = [
-        ("A · CREAM SOBRE DARK", "Continua a paleta atual"),
-        ("B · CREAM SOBRE VIOLET", "Punch máximo"),
-        ("C · VIOLET SOBRE DARK", "Accent invertido (recomendada)"),
+        ("A · CREAM / DARK", "Continua a paleta atual"),
+        ("B · CREAM / VIOLET", "Punch máximo"),
+        ("C · VIOLET / DARK", "Accent invertido (sugestão)"),
     ]
     for i, (label, sub) in enumerate(col_labels):
         x = PADDING + i * (CELL_W + COL_GAP) + 24
-        draw_tracked(draw, label, (x, col_y), F_MONO(15), "#5B3BFF" if i == 2 else LK_TEXT, 0.10)
-        draw.text((x, col_y + 24), sub, font=F_ITALIC(16), fill=LK_TEXT_MUTED)
+        draw_tracked(draw, label, (x, col_y), F_MONO(18),
+                     "#5B3BFF" if i == 2 else LK_TEXT, 0.12)
+        draw.text((x, col_y + 32), sub, font=F_ITALIC(19), fill=LK_TEXT_MUTED)
 
     # === Grid 3 contexts x 3 options ===
     contexts = [
