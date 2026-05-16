@@ -31,27 +31,44 @@ def download_video(url: str, out_dir: Path) -> dict:
     Returns the parsed info.json dict, or {} if it wasn't created.
     """
     out_dir.mkdir(parents=True, exist_ok=True)
-    cmd = [
+    # Pass 1 (critical): video + thumbnail + info.json. No subs here — sub fetches often 429.
+    video_cmd = [
         "yt-dlp",
         "-f", "bv*[height<=1080]+ba/b[height<=1080]/b",
         "--merge-output-format", "mp4",
         "--write-thumbnail",
         "--convert-thumbnails", "jpg",
         "--write-info-json",
-        "--write-auto-sub", "--write-sub", "--sub-lang", "pt,en,pt-BR",
         "--no-progress", "--no-warnings",
         "-o", str(out_dir / "video.%(ext)s"),
         url,
     ]
-    res = _run(cmd)
-    if res.returncode != 0:
+    res = _run(video_cmd)
+    has_video = any(out_dir.glob("video.mp4")) or any(out_dir.glob("video.mkv")) \
+                or any(out_dir.glob("video.webm"))
+    if res.returncode != 0 and not has_video:
         sys.stderr.write(f"[harvest] yt-dlp failed:\n{res.stderr}\n")
         raise RuntimeError("yt-dlp download failed")
 
+    # Pass 2 (best-effort): subtitles. Failures here just push us onto whisper.
+    sub_cmd = [
+        "yt-dlp",
+        "--skip-download",
+        "--write-auto-sub", "--write-sub", "--sub-lang", "pt.*,en.*",
+        "--sub-format", "vtt/srt/best",
+        "--no-abort-on-error", "--ignore-no-formats-error",
+        "--no-progress", "--no-warnings",
+        "-o", str(out_dir / "video.%(ext)s"),
+        url,
+    ]
+    sub_res = _run(sub_cmd)
+    if sub_res.returncode != 0:
+        sys.stderr.write(f"[harvest] subtitle fetch failed (will fall back to whisper): "
+                         f"{sub_res.stderr[-200:]}\n")
+
     info_path = out_dir / "video.info.json"
     if info_path.exists():
-        info = json.loads(info_path.read_text())
-        return info
+        return json.loads(info_path.read_text())
     return {}
 
 
