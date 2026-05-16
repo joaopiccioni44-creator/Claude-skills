@@ -1,0 +1,23 @@
+{
+  "theme": null,
+  "theme_slug": null,
+  "run_id": null,
+  "started_at": null,
+  "finished_at": null,
+  "params": {
+    "min_views": 500000,
+    "limit": 10,
+    "platforms": ["youtube", "tiktok", "instagram", "kwai"],
+    "use_apify": false,
+    "language": null
+  },
+  "summary": {
+    "discovered": 0,
+    "filtered": 0,
+    "harvested": 0,
+    "analyzed": 0,
+    "by_platform": {}
+  },
+  "cost_estimate_usd": 0.0,
+  "errors": []
+}

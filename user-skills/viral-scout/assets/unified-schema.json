@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ViralVideo",
+  "type": "object",
+  "required": ["platform", "video_id", "url", "metrics", "source_quality"],
+  "properties": {
+    "platform": {"type": "string", "enum": ["youtube", "tiktok", "instagram", "kwai"]},
+    "video_id": {"type": "string"},
+    "url": {"type": "string", "format": "uri"},
+    "title": {"type": ["string", "null"]},
+    "caption": {"type": ["string", "null"]},
+    "author": {
+      "type": "object",
+      "properties": {
+        "handle": {"type": ["string", "null"]},
+        "followers": {"type": ["integer", "null"]}
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "required": ["views"],
+      "properties": {
+        "views": {"type": "integer", "minimum": 0},
+        "likes": {"type": ["integer", "null"]},
+        "comments": {"type": ["integer", "null"]},
+        "shares": {"type": ["integer", "null"]}
+      }
+    },
+    "posted_at": {"type": ["string", "null"], "format": "date-time"},
+    "duration_seconds": {"type": ["integer", "null"]},
+    "thumbnail_url": {"type": ["string", "null"]},
+    "language": {"type": ["string", "null"]},
+    "source_quality": {"type": "string", "enum": ["full", "degraded"]}
+  }
+}
