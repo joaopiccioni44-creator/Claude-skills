@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -82,8 +83,12 @@ def find_subtitle_file(out_dir: Path) -> Path | None:
     return next((c for c in candidates if c.stat().st_size > 100), None)
 
 
+_INLINE_TAG_RE = re.compile(r"<[^>]+>")
+_HTML_ENT_RE = re.compile(r"&(nbsp|amp|lt|gt|quot|#\d+);")
+
+
 def subtitles_to_text(sub_path: Path) -> str:
-    """Strip VTT/SRT timing + cue numbers, return body."""
+    """Strip VTT/SRT timing + cue numbers + inline timing tags, return clean body."""
     lines: list[str] = []
     for raw in sub_path.read_text(encoding="utf-8", errors="replace").splitlines():
         s = raw.strip()
@@ -91,12 +96,19 @@ def subtitles_to_text(sub_path: Path) -> str:
             continue
         if s.startswith(("NOTE", "STYLE", "Kind:", "Language:")):
             continue
+        # Strip inline <00:00:00.960><c>...</c> word-level timing tags.
+        s = _INLINE_TAG_RE.sub("", s).strip()
+        if not s:
+            continue
+        s = _HTML_ENT_RE.sub(" ", s)
         lines.append(s)
-    # dedupe consecutive (auto-subs often repeat)
+    # Dedupe consecutive AND remove lines fully contained in the previous line
+    # (YouTube auto-subs repeat each line twice as it grows).
     deduped: list[str] = []
     for line in lines:
-        if not deduped or deduped[-1] != line:
-            deduped.append(line)
+        if deduped and (line == deduped[-1] or line in deduped[-1]):
+            continue
+        deduped.append(line)
     return "\n".join(deduped).strip()
 
 
