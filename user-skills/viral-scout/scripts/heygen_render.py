@@ -135,11 +135,13 @@ def _render_one(script: dict, section: dict, out_dir: Path) -> dict:
         sys.exit("script.json missing voice_id (run --smoke-test-voices first)")
     dim = script.get("dimension") or {"width": 720, "height": 1280}
     speed = float(script.get("speed", 1.0))
+    voice_emotion = script.get("voice_emotion")
     dest = out_dir / f"{section['key']}.mp4"
     print(f"[render] section={section['key']} → {dest}")
     final = heygen.render_to_file(
         character=char, voice_id=voice_id, input_text=section["text"],
         dest=dest, width=dim["width"], height=dim["height"], speed=speed,
+        voice_emotion=voice_emotion,
     )
     return {"key": section["key"], "path": str(dest),
             "duration": final.get("duration")}

@@ -94,22 +94,27 @@ def list_avatars() -> dict:
 # ---------- Video generation ----------
 
 def build_video_input(*, character: dict, voice_id: str, input_text: str,
-                      speed: float = 1.0) -> dict:
+                      speed: float = 1.0, voice_emotion: str | None = None) -> dict:
     """Construct one `video_inputs[]` entry.
 
-    `character` is the full character dict — caller decides type:
+    `character` is the full character dict — caller decides type and any
+    HeyGen-specific tuning fields (talking_style, expression, scale, offset, ...):
       - {"type": "avatar", "avatar_id": "...", "avatar_style": "normal"}
-      - {"type": "talking_photo", "talking_photo_id": "..."}
+      - {"type": "talking_photo", "talking_photo_id": "...", "talking_style": "stable",
+         "expression": "happy"}
+
+    `voice_emotion` (optional): HeyGen emotion tag like "Friendly", "Serious",
+    "Excited" — applied per-render without changing voice_id.
     """
-    return {
-        "character": character,
-        "voice": {
-            "type": "text",
-            "input_text": input_text,
-            "voice_id": voice_id,
-            "speed": speed,
-        },
+    voice = {
+        "type": "text",
+        "input_text": input_text,
+        "voice_id": voice_id,
+        "speed": speed,
     }
+    if voice_emotion:
+        voice["emotion"] = voice_emotion
+    return {"character": character, "voice": voice}
 
 
 def generate_video(*, video_inputs: list[dict],
@@ -172,10 +177,12 @@ def download(url: str, dest: Path, *, timeout: int = 300) -> Path:
 
 def render_to_file(*, character: dict, voice_id: str, input_text: str,
                    dest: Path, width: int = 720, height: int = 1280,
-                   speed: float = 1.0, log=print) -> dict:
+                   speed: float = 1.0, voice_emotion: str | None = None,
+                   log=print) -> dict:
     """Submit + poll + download. Returns final status dict (includes video_url, duration)."""
     vi = build_video_input(character=character, voice_id=voice_id,
-                           input_text=input_text, speed=speed)
+                           input_text=input_text, speed=speed,
+                           voice_emotion=voice_emotion)
     video_id = generate_video(video_inputs=[vi], width=width, height=height)
     log(f"[heygen] submitted video_id={video_id}")
 
