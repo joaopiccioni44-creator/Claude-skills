@@ -83,6 +83,26 @@ def check_firecrawl_reachable() -> None:
         add(WARN, f"Firecrawl probe failed: {type(e).__name__}: {e}")
 
 
+def check_heygen_reachable() -> None:
+    api_key = config.get("HEYGEN_API_KEY")
+    if not api_key:
+        return
+    req = urllib.request.Request(
+        "https://api.heygen.com/v2/voices",
+        headers={"X-Api-Key": api_key, "Accept": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read())
+            voices = (data.get("data") or {}).get("voices") or []
+            add(OK, f"HeyGen reachable ({len(voices)} voices)")
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")[:200]
+        add(FAIL, f"HeyGen API HTTP {e.code}: {body}")
+    except Exception as e:
+        add(WARN, f"HeyGen probe failed: {type(e).__name__}: {e}")
+
+
 def check_youtube_reachable() -> None:
     api_key = config.get("YOUTUBE_API_KEY")
     if not api_key:
@@ -120,11 +140,13 @@ def main() -> int:
     check_env("WHISPER_MODEL_PATH", required=True)
     check_env("OPENAI_API_KEY", required=False)
     check_env("APIFY_API_TOKEN", required=False)
+    check_env("HEYGEN_API_KEY", required=False)
 
     check_file("Whisper model", config.get("WHISPER_MODEL_PATH"), required=True)
 
     check_firecrawl_reachable()
     check_youtube_reachable()
+    check_heygen_reachable()
 
     for status, msg in CHECKS:
         print(f"{status} {msg}")
