@@ -1,3 +1,8 @@
+---
+name: automation
+description: Ensina a criar workflows automatizados usando n8n (self-hosted) e Make.com (cloud), incluindo instalação via Docker, configuração de integrações de APIs e padrões de workflow. Use quando o usuário pedir automação de processos, workflow n8n, integração via Make.com, ou pipeline de tarefas recorrentes.
+---
+
 # Automation Skill
 
 ## Propósito

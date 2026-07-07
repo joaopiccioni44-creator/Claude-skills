@@ -1,3 +1,8 @@
+---
+name: claude-mem
+description: Ensina a instalar, configurar e usar o claude-mem, plugin de memória persistente para Claude Code que captura ações durante sessões, comprime com IA e reutiliza em sessões futuras. Use quando o usuário perguntar sobre memória persistente entre sessões, configuração do claude-mem, ou continuidade de contexto entre projetos.
+---
+
 # Claude-Mem Skill
 
 ## Propósito

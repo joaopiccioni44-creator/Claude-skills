@@ -1,3 +1,8 @@
+---
+name: financial-analysis
+description: Framework de análise financeira profissional focado no mercado brasileiro: as 7 Forças de Hamilton (framework proprietário para análise de ações), métricas fundamentalistas B3, due diligence de startups, e formato Smart Brevity para newsletters/relatórios do Capital Pulse. Use quando o usuário pedir análise de ação (ex: VALE3, PETR4), due diligence de startup, ou relatório financeiro em Smart Brevity.
+---
+
 # Financial Analysis Skill
 
 ## Propósito

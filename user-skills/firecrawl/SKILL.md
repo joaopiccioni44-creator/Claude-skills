@@ -1,3 +1,8 @@
+---
+name: firecrawl
+description: Ensina a usar o Firecrawl para web scraping inteligente e extração de dados estruturados — scrape de página única, crawl de site completo, e formatos de saída (markdown, html). Use quando o usuário pedir extração de conteúdo web, scraping de site, ou dados estruturados de uma URL.
+---
+
 # Firecrawl Skill
 
 ## Propósito
