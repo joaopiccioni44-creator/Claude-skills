@@ -241,7 +241,7 @@ Não reescrever o texto inteiro. Cirurgia, não transplante. Se houver mais de 8
 
 ## Exemplos de Voz do João (referência viva)
 
-Posts publicados recentemente que exemplificam a voz calibrada vivem em `/Users/joaopiccioni/Documents/Claude/Projects/LinkedIn & Instagram/`. Em particular:
+Posts publicados recentemente que exemplificam a voz calibrada vivem em `/Users/jo/Documents/Claude/Projects/LinkedIn & Instagram/`. Em particular:
 
 - `2026-05-08-post-ai-hedge-fund.md` — Profecia/analogia histórica (Renaissance), dados ancorados (66k stars, 10x inference), brands como infra ("Exército de Agentes que opera o Capital Pulse"), CTA com setor nomeado ("mesa de gestão tradicional no Brasil")
 - `2026-05-03-post-linkedin-ai-displacement-paradox-solis.md` — voz analítica em tema de transformação tecnológica

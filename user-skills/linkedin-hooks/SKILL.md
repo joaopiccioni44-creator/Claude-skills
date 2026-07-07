@@ -38,7 +38,7 @@ Independente do padrão escolhido, todo hook forte tem ao menos uma destas três
 ## Tracker — Consulta Obrigatória Antes de Propor
 
 **Path do tracker:**
-`/Users/joaopiccioni/Documents/Claude/Projects/LinkedIn & Instagram/hooks-utilizados.md`
+`/Users/jo/Documents/Claude/Projects/LinkedIn & Instagram/hooks-utilizados.md`
 
 O tracker registra qual padrão foi usado em cada post, quantas vezes, e marca padrões "queimados" pelo uso excessivo. Repetir padrão queimado dilui autenticidade percebida e treina o algoritmo a categorizar o autor como template, não como voz original.
 
@@ -275,7 +275,7 @@ Quando o usuário trouxer um hook para revisar, rodar este checklist:
 
 Quando o usuário pedir um hook (criação ou alternativa para post existente):
 
-1. **Ler o tracker** em `/Users/joaopiccioni/Documents/Claude/Projects/LinkedIn & Instagram/hooks-utilizados.md`.
+1. **Ler o tracker** em `/Users/jo/Documents/Claude/Projects/LinkedIn & Instagram/hooks-utilizados.md`.
 2. **Mapear padrões disponíveis** — listar livres, baixo uso, queimados.
 3. **Entender o post** — pilar temático, tipo no mix (educacional/história/lead magnet/conversão), objetivo, tom desejado.
 4. **Propor 1 hook principal** — padrão escolhido com justificativa explícita ("escolhido porque o tema X pede tensão sobre o grupo Y, e padrão Tensão de Identidade está livre no tracker").
